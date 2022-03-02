@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="index.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      <em>Thank you for taking the time to help us improve the platform</em>
+    </p>
+    <div id="container"></div>
+
+    <form id="survey-form">
+      <label for="name" id="name-label" class="label1">Name </label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <label for="email" id="email-label" class="label1">Email</label>
+      <input type="email"  id="email" placeholder="Enter your Email" required />
+      <label for="number" id="number-label" class="label1"
+        >Age <span id="opt">(optional)</span></label
+      >
+      <input type="number" id="number" placeholder="Age" min="10" max="99" required />
+      <label for="" id="current-role" class="label1"
+        >Which option best describes your current role?</label
+      >
+      <select name="role" id="dropdown" required>
+
+        <option disabled selected value> Select current role</span></option>
+        <option value="frontend">Front-end Developer</option>
+        <option value="backend">Back-end Developer</option>
+        <option value="fullstack">Fullstack Developer</option>
+      </select>
+
+      <label class="label1" for="" >What is your favorite feature of freeCodeCamp?</label>
+      <div class="radios">
+        
+      <input id="radio-btn-1" type="radio" name="radio1" value="definitely">
+      <label  id="radio-lbl-1" for="radio-btn-1">Definitely</label>
+      <input id="radio-btn-2" type="radio" name="radio1" value="maybe">
+      <label  id="radio-lbl-2" for="radio-btn-2">Maybe</label>
+      <input id="radio-btn-3" type="radio" name="radio1" value="not sure">
+      <label  id="radio-lbl-3" for="radio-btn-3">Not Sure</label>
+      
+      </div>
+      <label for="" id="current-role" class="label1"
+        >Which option best describes your current role?</label
+      >
+      <select name="role" id="dropdown2" required>
+
+        <option disabled selected value> Select an option</span></option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="opensource">Open Source</option>
+      </select>
+      
+      <label id="check-lbl-main"for="">What would you like to see improved? <span>(Check all that apply)</span></label>
+      <div class="checkbuttons">
+        <input id="check-btn-1"type="checkbox" value="Front-end Projects">
+        <label id="check-lbl-1" for="check-btn-1">Front-end Projects</label>
+
+        <input id="check-btn-2"type="checkbox" value="Back-end Projects">
+        <label id="check-lbl-2" for="check-btn-2">Back-end Projects</label>
+
+        <input id="check-btn-3"type="checkbox" value="Data Visualization">
+        <label id="check-lbl-3" for="check-btn-3">Data Visualization</label>
+
+        <input id="check-btn-4"type="checkbox" value="Challengess">
+        <label id="check-lbl-4" for="check-btn-4">Challenges</label>
+
+        <input id="check-btn-5"type="checkbox" value="Open Source Community">
+        <label id="check-lbl-5" for="check-btn-5">Open Source Community</label>
+
+        <input id="check-btn-6"type="checkbox" value="Gitter help rooms">
+        <label id="check-lbl-6" for="check-btn-6">Gitter help rooms</label>
+
+        <input id="check-btn-7"type="checkbox" value="Videos">
+        <label id="check-lbl-7" for="check-btn-7">Videos</label>
+
+        <input id="check-btn-8"type="checkbox" value="City Meetups">
+        <label id="check-lbl-8" for="check-btn-8">City Meetups</label>
+
+        <input id="check-btn-9"type="checkbox" value="Wiki">
+        <label id="check-lbl-9" for="check-btn-9">Wiki</label>
+
+        <input id="check-btn-10"type="checkbox" value="Forum">
+        <label id="check-lbl-10" for="check-btn-10">Forum</label>
+
+        <input id="check-btn-11"type="checkbox" value="Additional Courses">
+        <label id="check-lbl-11" for="check-btn-11">Additional Courses</label>
+      </div>
+
+      <label id="label-text"  for="text-1" >Any comments or suggestions?</label>
+
+      <textarea id="text-1" name="comment"
+      placeholder="Enter your comment here..."></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+
+
+    </form>
+  </body>
+</html>

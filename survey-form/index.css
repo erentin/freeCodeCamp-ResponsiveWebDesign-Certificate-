@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300;1,400&display=swap");
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 2100px;
+  background: linear-gradient(
+        to bottom,
+        rgba(43, 0, 144, 0.7) 0% 40%,
+        rgba(59, 1, 82, 0.7) 60% 100%
+      )
+      fixed,
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg)
+      fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Lato", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+/* title and description part */
+
+#title {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 50px;
+  text-align: center;
+}
+
+#description {
+  line-height: 30px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* survey form part */
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  width: calc(90% - 100px);
+  max-width: 700px;
+  height: 1800px;
+  background-color: rgba(7, 0, 46, 0.76);
+  border-radius: 10px;
+  padding: 50px;
+}
+
+/* text inputs */
+
+#survey-form #name,
+#email,
+#number {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  margin-bottom: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#survey-form .label1 {
+  margin-bottom: 7px;
+  font-size: 18px;
+}
+
+#opt {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.781);
+  padding-bottom: 5px;
+}
+
+/* dropdown menues and radios */
+
+#dropdown,
+#dropdown2 {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  color: rgb(0, 0, 0);
+}
+
+#survey-form .radios {
+  width: 130px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px;
+  margin-top: 10px;
+}
+#survey-form input[type="radio"] {
+  height: 30px;
+  width: 35px;
+}
+
+#radio-lbl-1,
+#radio-lbl-2,
+#radio-lbl-3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Checkbox */
+
+#check-lbl-main {
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.checkbuttons {
+  display: inline-block;
+  width: 250px;
+  height: 580px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.checkbuttons label {
+  display: inline-block;
+  width: 200px;
+  vertical-align: 6px;
+  margin-left: 7px;
+}
+
+/* text part */
+
+#label-text {
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+textarea {
+  height: 150px;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-top: 10px;
+  resize: vertical;
+}
+
+/* submit part */
+
+#submit {
+  margin-top: 50px;
+  height: 50px;
+  background-color: rgba(115, 241, 115, 0.596);
+  color: white;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
